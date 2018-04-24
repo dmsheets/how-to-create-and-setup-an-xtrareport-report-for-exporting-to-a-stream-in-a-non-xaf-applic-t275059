@@ -21,6 +21,7 @@ Namespace ExportXafReport
         Private Shared Sub ExportReport(ByVal reportData As IReportDataV2, ByVal objectSpaceProvider As IObjectSpaceProvider)
                 Dim report As XtraReport = ReportDataProvider.ReportsStorage.LoadReport(reportData)
                 Dim reportDataSourceHelper As New MyReportDataSourceHelper(objectSpaceProvider)
+                ReportDataProvider.ReportObjectSpaceProvider = New MyReportObjectSpaceProvider(objectSpaceProvider)
                 reportDataSourceHelper.SetupBeforePrint(report)
                 report.ExportToPdf("test.pdf")
         End Sub

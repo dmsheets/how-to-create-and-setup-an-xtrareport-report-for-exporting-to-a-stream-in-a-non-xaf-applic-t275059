@@ -29,7 +29,7 @@
             Me.module4 = New ExportReportDemo.Module.Win.ExportReportDemoWindowsFormsModule()
             Me.reportsModuleV2 = New DevExpress.ExpressApp.ReportsV2.ReportsModuleV2()
             Me.reportsWindowsFormsModuleV2 = New DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             '
             ' reportsModuleV2
             '
@@ -48,7 +48,7 @@
             Me.Modules.Add(Me.reportsWindowsFormsModuleV2)
             Me.UseOldTemplates = False
 
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
 

@@ -14,10 +14,11 @@ Imports DevExpress.ExpressApp.Model.DomainLogics
 Imports DevExpress.ExpressApp.Model.NodeGenerators
 
 Namespace ExportReportDemoEF.Module.Win
+    ' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
     <ToolboxItemFilter("Xaf.Platform.Win")> _
     Public NotInheritable Partial Class ExportReportDemoEFWindowsFormsModule
         Inherits ModuleBase
-    ' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
+
         Public Sub New()
             InitializeComponent()
         End Sub

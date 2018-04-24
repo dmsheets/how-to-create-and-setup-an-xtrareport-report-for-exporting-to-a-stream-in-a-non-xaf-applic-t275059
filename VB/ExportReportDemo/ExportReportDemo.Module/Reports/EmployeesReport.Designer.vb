@@ -41,8 +41,8 @@
             Me.DataField = New DevExpress.XtraReports.UI.XRControlStyle()
             Me.topMarginBand1 = New DevExpress.XtraReports.UI.TopMarginBand()
             Me.bottomMarginBand1 = New DevExpress.XtraReports.UI.BottomMarginBand()
-            DirectCast(Me.collectionDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.collectionDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' Detail
             ' 
@@ -200,8 +200,8 @@
             Me.DataSource = Me.collectionDataSource1
             Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.Title, Me.FieldCaption, Me.PageInfo, Me.DataField})
             Me.Version = "14.2"
-            DirectCast(Me.collectionDataSource1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.collectionDataSource1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
 

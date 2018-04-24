@@ -23,13 +23,13 @@ Namespace ExportReportDemoEF.Win
                 args.ObjectSpaceProvider = New EFObjectSpaceProvider(GetType(ExportReportDemoEFDbContext), TypesInfo, Nothing, args.ConnectionString)
             End If
         End Sub
-        Private Sub ExportReportDemoEFWindowsFormsApplication_CustomizeLanguagesList(ByVal sender As Object, ByVal e As CustomizeLanguagesListEventArgs) Handles MyBase.CustomizeLanguagesList
+        Private Sub ExportReportDemoEFWindowsFormsApplication_CustomizeLanguagesList(ByVal sender As Object, ByVal e As CustomizeLanguagesListEventArgs) Handles Me.CustomizeLanguagesList
             Dim userLanguageName As String = System.Threading.Thread.CurrentThread.CurrentUICulture.Name
             If userLanguageName <> "en-US" AndAlso e.Languages.IndexOf(userLanguageName) = -1 Then
                 e.Languages.Add(userLanguageName)
             End If
         End Sub
-        Private Sub ExportReportDemoEFWindowsFormsApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles MyBase.DatabaseVersionMismatch
+        Private Sub ExportReportDemoEFWindowsFormsApplication_DatabaseVersionMismatch(ByVal sender As Object, ByVal e As DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs) Handles Me.DatabaseVersionMismatch
 #If EASYTEST Then
             e.Updater.Update()
             e.Handled = True
